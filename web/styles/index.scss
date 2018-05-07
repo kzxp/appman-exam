@@ -12,4 +12,73 @@
             transform: rotate(360deg);
         }
     }
+
+    .bgcolor{
+        background-color: ghostwhite;
+        background-size: cover;
+        min-height: 100%;
+        min-width: 1024px;
+    }
+    
+    div{
+        font-family: sans-serif;
+    }
+    
+    div.loginbox{
+        background-color: white;
+        margin-top: 10%;
+        box-shadow: 5px 10px 18px#c2c2c2;
+    }
+    
+    input.inputbox{
+        height: 50px;
+        border-style: none;
+        border-radius: 1rem;
+        border: solid;
+        border-color: #c2c2c28f;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+    
+    .signin{
+        background-color: deepskyblue;
+        border: deepskyblue;
+        border-radius: 5px;
+        color: white;
+        height: 50px;
+    }
+    
+    img.logo{
+        width: 180px;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    
+    input.borderinput{
+        border-color: #242526;
+    }
+    
+    p.deepskyblue{
+        margin-top: 5%;
+        color: deepskyblue;
+    }
+    
+    p.underline{
+        text-decoration: underline;
+    }
+    
+    label{
+        color:red
+    }
+    
+    .hidden{
+        display: none;
+    }
+    
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
 }

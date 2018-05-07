@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
+import LoginBox from './LoginBox'
+import './styles/index.scss'
 
-class App extends React.Component {
+class App extends Component {
+
     render() {
-        // start your code here
-        return <h1>hello world</h1>;
+        return (
+            <div className="bgcolor">
+                <div className='col-14'>
+                    <LoginBox />
+                </div>
+            </div>
+        )
     }
 }
 
