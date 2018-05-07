@@ -7,9 +7,7 @@ class App extends Component {
     render() {
         return (
             <div className="bgcolor">
-                <div className='col-14'>
-                    <LoginBox />
-                </div>
+                <LoginBox />
             </div>
         )
     }

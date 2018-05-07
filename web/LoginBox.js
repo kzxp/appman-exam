@@ -47,11 +47,10 @@ export default class LoginBox extends Component {
         var self = this;
         this.logospin(true);
         this.showLabel(false);
-        await axios
-            .post('http://localhost:3000/api/login', {
-                email: this.state.email,
-                password: this.state.password
-            })
+        await axios.post('http://localhost:3000/api/login', {
+            email: this.state.email,
+            password: this.state.password
+        })
             .then(function (response) {
                 if (response.status == 200) {
                     alert('Login Successed')
@@ -100,11 +99,11 @@ export default class LoginBox extends Component {
 
                 <div className='form-inline'>
                     <p
-                        className={this.state.forgetPass === false ? 'deepskyblue ' : 'deepskyblue underline'}
+                        className={this.state.forgetPass === false ? 'col-5 deepskyblue ' : 'col-5 deepskyblue underline'}
                         onMouseOver={() => this.chgUnderlineForget(true)}
                         onMouseLeave={() => this.chgUnderlineForget(false)}>Forget password ?</p>
                     <p
-                        className={this.state.createAcc === false ? 'offset-4 deepskyblue' : 'offset-4 deepskyblue underline'}
+                        className={this.state.createAcc === false ? 'col-5 offset-2 deepskyblue' : 'col-5 offset-2 deepskyblue underline'}
                         onMouseOver={() => this.chgUnderlineCreate(true)}
                         onMouseLeave={() => this.chgUnderlineCreate(false)}>Create new Account</p>
                 </div>
